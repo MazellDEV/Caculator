@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale>
 
 void Add()  {
 double a;
@@ -28,6 +29,8 @@ std::cout << r;
 
 int main() {
   static std::string Choice;
+  std::locale loc;
+  
   std::cout << "Do you want to add or subtract\n";
   std::cin >> Choice;
 
